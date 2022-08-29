@@ -1,0 +1,71 @@
+.sidebar__button {
+    border-radius: 50%;
+    
+    border: none;
+}
+
+.sidebar__button img {
+    cursor: pointer;
+}
+
+.sidebar__list {
+    
+    margin-top: 1.5rem;
+    
+}
+
+.sidebar__color-dots {
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto;
+    list-style: none;
+    
+}
+
+.active {
+    animation: pop-up 0.2s ease-in-out forwards;
+}
+
+.close {
+    animation: pop-down 0.2s ease-in-out forwards;
+}
+
+.sidebar__color-dots:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+@keyframes pop-up {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    98% {
+        visibility: visible;
+        opacity: 0.7;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes pop-down {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0.7;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
